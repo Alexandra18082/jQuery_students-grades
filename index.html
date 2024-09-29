@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grades</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add students' grades.</h1>
+      <form id="grade-form">
+        <input
+          type="text"
+          id="student-name"
+          placeholder="Add student' name."
+          required
+        />
+        <input type="number" id="student-grade" min="1" max="10" required />
+        <button type="submit">Add</button>
+      </form>
+      <h2>Students List</h2>
+      <ul id="students-list"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
